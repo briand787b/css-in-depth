@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 2.27</title>
+    <style>
+        :root {
+            --main-bg: #fff;
+            --main-color: #000;
+        }
+
+        .rems {
+            color: red;
+        }
+
+        .pixels {
+            color: purple;
+        }
+
+        .ems {
+            color: green;
+        }
+
+        .panel {
+            font-size: 1rem;
+            padding: 1em;
+            border: 1px solid #999;
+            border-radius: 0.5em;
+            background-color: var(--main-bg);
+            color: var(--main-color);
+        }
+
+        .panel > h2 {
+            margin-top: 0;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>When in doubt, use <span class="rems">rems</span> for <span class="rems">font size</span>, <span class="pixels">pixels</span> for <span class="pixels">borders</span>, and <span class="ems">ems</span> for <span class="ems">most other properties</span></h1>
+    <div class="panel">
+        <h2>Single-origin</h2>
+        <div class="body">
+            We have built partnerships with small farms
+            around the world to hand-select beans at the
+            peak of season. We then careful roast in
+            small batches to maximize their potential.
+        </div>
+    </div>
+
+    <aside class="dark">
+        <div class="panel">
+            <h2>Single-origin</h2>
+            <div class="body">
+                We have built partnerships with small farms
+                around the world to hand-select beans at the
+                peak of season. We then careful roast in
+                small batches to maximize their potential.
+            </div>
+        </div>
+    </aside>
+</body>
+
+</html>
