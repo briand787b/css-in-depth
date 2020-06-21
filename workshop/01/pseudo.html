@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Valid HTML document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        ul {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: block;
+            padding: 16px;
+
+            background: skyblue;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* li:nth-child(3n-1) {
+            background: skyblue;
+            color: white;
+            font-weight: bold;
+        }
+
+        li:nth-child(3n) {
+            background: deepskyblue;
+            color: white;
+            font-weight: bolder;
+        } */
+
+        .primary > li ~ li {
+            background: deepskyblue;
+            color: white;
+            font-weight: bolder;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Valid HTML document</h1>
+    <p>This document is valid HTML5</p>
+    <ul class="primary">
+        <li>First Element</li>
+        <li>Second Element</li>
+        <li>Third Element</li>
+        <li>Fourth Element</li>
+        <li>Fifth Element</li>
+        <li>Sixth Element</li>
+    </ul>
+</body>
+
+</html>

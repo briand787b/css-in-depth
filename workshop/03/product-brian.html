@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3.05</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .product-cards {
+            display: flex;
+            margin-right: 10px;
+        }
+
+        .product-card {
+            padding: 10px;
+            border: 1px solid black;
+            margin: 10px 0 10px 10px;
+        }
+
+        .product-card img {
+            margin-bottom: 30px;
+        }
+
+        .product-card h2,
+        .product-card p {
+            padding-left: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .product-card h2 {
+            margin-bottom: 20px;
+        }
+
+        .product-card a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .product-card a:hover {
+            text-decoration: underline;    
+        }
+
+        .product-card p {
+            line-height: 1.5;
+        }
+
+        .regular-price {
+            color: dimgray;
+        }
+
+        .paid-price-value {
+            text-decoration: underline;
+        }
+
+        .savings {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="product-cards">
+        <div class="product-card">
+            <img src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+1" alt="Product image 1" />
+            <h2><a href="">Video title 1</a></h1>
+                <p class="regular-price">RRP: $18.99</p>
+                <p class="paid-price">Price you pay: <span class="paid-price-value">$9.99</span></p>
+                <p class="savings">$9</p>
+        </div>
+        <div class="product-card">
+            <img src="https://dummyimage.com/300x300/7EC0EE/000&text=Product+Image+1" alt="Product image 1" />
+            <h2><a href="">Video title 1</a></h1>
+                <p class="regular-price">RRP: $18.99</p>
+                <p class="paid-price">Price you pay: <span class="paid-price-value">$9.99</span></p>
+                <p class="savings">$9</p>
+        </div>
+    </div>
+</body>
+
+</html>
